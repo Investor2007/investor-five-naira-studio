@@ -296,32 +296,12 @@
       box-shadow: 0 22px 70px rgba(0, 0, 0, 0.3);
     }
 
-    .portrait-placeholder {
+    .hero-portrait {
+      width: 100%;
       height: calc(100% - 31px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      gap: 5px;
-      color: #a1bfd3;
-      background:
-        linear-gradient(145deg, rgba(107, 196, 230, 0.10), rgba(142, 112, 212, 0.12)),
-        radial-gradient(ellipse at 46% 45%, rgba(185, 206, 228, 0.26), transparent 38%),
-        linear-gradient(145deg, #17394e, #132738 55%, #263349);
-      font-size: 9px;
-      letter-spacing: 0.2em;
-    }
-
-    .portrait-placeholder small {
-      font-size: 9px;
-      letter-spacing: 0.04em;
-      color: #829bb0;
-    }
-
-    .image-icon {
-      font-size: 42px;
-      color: #bce9ff;
-      margin-bottom: 9px;
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
 
     .frame-caption {
@@ -1186,11 +1166,11 @@
         <div class="art-orbit orbit-two"></div>
 
         <div class="portrait-frame">
-          <div class="portrait-placeholder">
-            <span class="image-icon">✳</span>
-            <span>YOUR HERO PORTRAIT</span>
-            <small>Replace with your photo</small>
-          </div>
+          <img
+            class="hero-portrait"
+            src="assets/my-portrait.jpg"
+            alt="Portrait of Inye Ata-Usen"
+          >
           <div class="frame-caption">
             <span>PORTRAIT STUDY / 001</span>
             <span>✦</span>
